@@ -6,7 +6,7 @@ const dateEL = document.querySelector('.date');
 const timeEL = document.querySelector('.time');
 const circleEL = document.querySelector('.circle');
 
-const ampm = hours >= 12 ? "PM" : "AM";
+const ampm = hour >= 12 ? "PM" : "AM";
 
 const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
