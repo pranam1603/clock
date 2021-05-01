@@ -6,7 +6,7 @@ const dateEL = document.querySelector('.date');
 const timeEL = document.querySelector('.time');
 const circleEL = document.querySelector('.circle');
 
-const ampm = hour >= 12 ? "PM" : "AM";
+
 
 const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
@@ -31,7 +31,8 @@ const setTime = () => {
     const day = time.getDay()
     const date = time.getDate()
     const month = time.getMonth()
-
+    const ampm = hour >= 12 ? "PM" : "AM";'
+    
     hours.style.transform = `translate(-50%, -100%) rotate(${scale(hourForClock, 0, 11, 0, 360)}deg)`;
     minutes.style.transform = `translate(-50%, -100%) rotate(${scale(minute, 0, 59, 0, 360)}deg)`;
     seconds.style.transform = `translate(-50%, -100%) rotate(${scale(second, 0, 59, 0, 360)}deg)`;
